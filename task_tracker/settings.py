@@ -28,7 +28,7 @@ SECRET_KEY = '_r$j5ag&et@i&yv)5%ura@)sq$4ym(dhgq=wg#p3ya-%^8y$o='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -81,10 +81,10 @@ WSGI_APPLICATION = 'task_tracker.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'task_tracker',
-        'USER': 'task_tracker',
-        'PASSWORD': 'qwerty',
-        'HOST': '127.0.0.1',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        # 'PASSWORD': 'qwerty',
+        'HOST': 'db',
         'PORT': 5432
     }
 }
